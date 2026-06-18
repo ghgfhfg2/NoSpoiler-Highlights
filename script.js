@@ -243,6 +243,8 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/13746888",
   },
   umdBVpCfddNXbRK: {
+    kbsGeneral: "https://chzzk.naver.com/video/13759574",
+    kbsShort: "https://chzzk.naver.com/video/13759619",
     jtbcGeneral: "https://m.sports.naver.com/video/1480778",
     jtbcShort: "https://chzzk.naver.com/video/13759652",
   },
