@@ -233,6 +233,11 @@ body:not(.is-group-view) .group-tabs {
   display: none;
 }
 
+body.is-date-view .match-row:not(.is-selected-date),
+body.is-date-view .group-section:not(.has-selected-date) {
+  display: none !important;
+}
+
 body.is-tournament-view .schedule {
   display: none;
 }

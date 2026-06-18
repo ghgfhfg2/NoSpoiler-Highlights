@@ -477,7 +477,9 @@ function applyView() {
   }
 
   matchRows.forEach((row) => {
-    const shouldHide = isTournamentView || (isDateView && row.dataset.date !== selectedDate);
+    const isSelectedDateRow = row.dataset.date === selectedDate;
+    const shouldHide = isTournamentView || (isDateView && !isSelectedDateRow);
+    row.classList.toggle("is-selected-date", isSelectedDateRow);
     row.hidden = shouldHide;
     row.style.display = shouldHide ? "none" : "";
   });
@@ -486,6 +488,7 @@ function applyView() {
     const hasVisibleRows = Array.from(section.querySelectorAll(".match-row")).some((row) => !row.hidden);
     const isSelectedGroup = selectedGroup === "all" || section.id === selectedGroup;
     const shouldHide = isTournamentView || (isDateView && !hasVisibleRows) || (isGroupView && !isSelectedGroup);
+    section.classList.toggle("has-selected-date", hasVisibleRows);
     section.hidden = shouldHide;
     section.style.display = shouldHide ? "none" : "";
   });
