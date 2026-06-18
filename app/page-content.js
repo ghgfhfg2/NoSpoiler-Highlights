@@ -1,7 +1,10 @@
 export const pageHtml = String.raw`
 <header class="site-header">
-      <p class="kicker">2026 FIFA WORLD CUP</p>
-      <h1>NoSpoiler Highlights</h1>
+      <div class="hero-inner">
+        <p class="kicker">2026 FIFA WORLD CUP</p>
+        <h1>노스포 하이라이트</h1>
+        <p class="hero-copy">점수도 결과도 보지 않고, 공식 하이라이트 링크로 바로 이동하세요.</p>
+      </div>
     </header>
 
     <main>

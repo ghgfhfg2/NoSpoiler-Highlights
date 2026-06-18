@@ -47,23 +47,39 @@ a {
 }
 
 .site-header {
-  background: var(--surface);
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
   border-bottom: 1px solid var(--line);
-  padding: 18px max(16px, calc((100vw - 1180px) / 2)) 16px;
+  padding: 30px max(16px, calc((100vw - 1180px) / 2)) 26px;
+}
+
+.hero-inner {
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
 }
 
 .kicker {
-  margin: 0 0 5px;
+  margin: 0;
   color: var(--accent);
   font-size: 13px;
   font-weight: 850;
+  letter-spacing: 0;
 }
 
 h1 {
   margin: 0;
-  font-size: 30px;
-  line-height: 1;
+  font-size: 42px;
+  line-height: 1.08;
   letter-spacing: 0;
+}
+
+.hero-copy {
+  margin: 0;
+  color: #4f5967;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.55;
 }
 
 main {
@@ -636,7 +652,7 @@ body.is-tournament-view .schedule {
   }
 
   .site-header {
-    padding: 14px 16px 13px;
+    padding: 22px 16px 18px;
   }
 
   .kicker {
@@ -644,7 +660,12 @@ body.is-tournament-view .schedule {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 31px;
+  }
+
+  .hero-copy {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .view-tabs {

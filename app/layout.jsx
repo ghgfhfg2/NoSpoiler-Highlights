@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "NoSpoiler Highlights",
+  title: "노스포 하이라이트",
   description: "스포일러 없이 공식 월드컵 하이라이트 링크를 찾는 서비스",
 };
 
