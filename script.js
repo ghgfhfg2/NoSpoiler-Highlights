@@ -477,13 +477,17 @@ function applyView() {
   }
 
   matchRows.forEach((row) => {
-    row.hidden = isDateView && row.dataset.date !== selectedDate;
+    const shouldHide = isTournamentView || (isDateView && row.dataset.date !== selectedDate);
+    row.hidden = shouldHide;
+    row.style.display = shouldHide ? "none" : "";
   });
 
   groupSections.forEach((section) => {
     const hasVisibleRows = Array.from(section.querySelectorAll(".match-row")).some((row) => !row.hidden);
     const isSelectedGroup = selectedGroup === "all" || section.id === selectedGroup;
-    section.hidden = isTournamentView || (isDateView && !hasVisibleRows) || (isGroupView && !isSelectedGroup);
+    const shouldHide = isTournamentView || (isDateView && !hasVisibleRows) || (isGroupView && !isSelectedGroup);
+    section.hidden = shouldHide;
+    section.style.display = shouldHide ? "none" : "";
   });
 
   groupCards.forEach((card) => {
