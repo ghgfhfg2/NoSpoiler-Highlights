@@ -291,8 +291,16 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/13777445",
   },
   otm3ifUAdXj3aXP: {
+    kbsGeneral: "https://chzzk.naver.com/video/13794991",
     kbsShort: "https://chzzk.naver.com/video/13794997",
     jtbcGeneral: "https://chzzk.naver.com/video/13795010",
+    jtbcShort: "https://chzzk.naver.com/video/13795014",
+  },
+  Dyi3OzF4bEkPuMV: {
+    kbsGeneral: "https://chzzk.naver.com/video/13795633",
+    kbsShort: "https://chzzk.naver.com/video/13795845",
+    jtbcGeneral: "https://chzzk.naver.com/video/13795597",
+    jtbcShort: "https://chzzk.naver.com/video/13795605",
   },
 };
 

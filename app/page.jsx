@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
-      <Script src="/site.js?v=jun20-links-1" strategy="afterInteractive" />
+      <Script src="/site.js?v=jun20-links-2" strategy="afterInteractive" />
     </>
   );
 }
