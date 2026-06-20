@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
-      <Script src={`${basePath}/site.js?v=portugal-kbs-links-1`} strategy="afterInteractive" />
+      <Script src={`${basePath}/site.js?v=jun20-links-1`} strategy="afterInteractive" />
     </>
   );
 }
