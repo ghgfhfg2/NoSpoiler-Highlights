@@ -308,6 +308,12 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/13796304",
     jtbcShort: "https://chzzk.naver.com/video/13796327",
   },
+  "5q4yP11gesyrHQr": {
+    kbsGeneral: "https://chzzk.naver.com/video/13797425",
+    kbsShort: "https://chzzk.naver.com/video/13797460",
+    jtbcGeneral: "https://chzzk.naver.com/video/13797374",
+    jtbcShort: "https://chzzk.naver.com/video/13797421",
+  },
 };
 
 const highlightLinkSlots = [
