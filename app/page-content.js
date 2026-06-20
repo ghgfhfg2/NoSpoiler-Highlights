@@ -1278,6 +1278,15 @@ export const pageHtml = String.raw`
       </section>
     </main>
 
+    <section class="ad-section" aria-label="광고">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6788425959877259"
+        data-ad-slot="8873083463"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </section>
+
     <footer class="site-footer">
       <p>본 서비스는 공식 하이라이트 영상을 직접 제공하지 않습니다.</p>
       <p>모든 영상은 각 권리자의 공식 페이지에서 시청할 수 있으며, 본 서비스는 해당 공식 페이지로 연결하는 링크만 제공합니다.</p>

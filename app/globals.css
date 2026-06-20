@@ -626,6 +626,12 @@ body.is-tournament-view .schedule {
   font-size: 13px;
 }
 
+.ad-section {
+  width: min(1180px, calc(100% - 16px));
+  margin: 10px auto 0;
+  padding: 0 8px;
+}
+
 .site-footer p {
   margin: 0;
 }
@@ -832,6 +838,12 @@ body.is-tournament-view .schedule {
   .site-footer {
     width: calc(100% - 16px);
     padding-bottom: 28px;
+  }
+
+  .ad-section {
+    width: calc(100% - 16px);
+    margin-top: 4px;
+    padding: 0 6px;
   }
 }
 
