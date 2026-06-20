@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
+      {/*
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6788425959877259"
@@ -14,6 +15,7 @@ export default function Home() {
       <Script id="adsbygoogle-init" strategy="afterInteractive">
         {`(adsbygoogle = window.adsbygoogle || []).push({});`}
       </Script>
+      */}
       <Script src="/site.js?v=jun20-links-5" strategy="afterInteractive" />
     </>
   );

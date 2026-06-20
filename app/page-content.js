@@ -1278,6 +1278,7 @@ export const pageHtml = String.raw`
       </section>
     </main>
 
+    <!--
     <section class="ad-section" aria-label="광고">
       <ins class="adsbygoogle"
         style="display:block"
@@ -1286,6 +1287,7 @@ export const pageHtml = String.raw`
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
     </section>
+    -->
 
     <footer class="site-footer">
       <p>본 서비스는 공식 하이라이트 영상을 직접 제공하지 않습니다.</p>
