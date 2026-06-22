@@ -350,6 +350,12 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/13828559",
     jtbcShort: "https://chzzk.naver.com/video/13828615",
   },
+  "66ngsptIPI18Ie0": {
+    kbsGeneral: "https://chzzk.naver.com/video/13829965",
+    kbsShort: "https://chzzk.naver.com/video/13830038",
+    jtbcGeneral: "https://chzzk.naver.com/video/13829909",
+    jtbcShort: "https://chzzk.naver.com/video/13829896",
+  },
   g6yqVZylEBXe8jV: {
     kbsGeneral: "https://chzzk.naver.com/video/13829265",
     kbsShort: "https://chzzk.naver.com/video/13829250",
