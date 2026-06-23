@@ -362,6 +362,18 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/13829279",
     jtbcShort: "https://chzzk.naver.com/video/13829310",
   },
+  y6VpQ1Z2znEh3Hc: {
+    kbsGeneral: "https://chzzk.naver.com/video/13844387",
+    kbsShort: "https://chzzk.naver.com/video/13844391",
+    jtbcGeneral: "https://chzzk.naver.com/video/13844343",
+    jtbcShort: "https://chzzk.naver.com/video/13844354",
+  },
+  "1NVK4CL26vdJGXj": {
+    kbsGeneral: "https://chzzk.naver.com/video/13844854",
+    kbsShort: "https://chzzk.naver.com/video/13844926",
+    jtbcGeneral: "https://chzzk.naver.com/video/13844670",
+    jtbcShort: "https://chzzk.naver.com/video/13844662",
+  },
   ukQo5BMsXYKNC4S: {
     kbsGeneral: "https://chzzk.naver.com/video/13842690",
     kbsShort: "https://chzzk.naver.com/video/13842781",
