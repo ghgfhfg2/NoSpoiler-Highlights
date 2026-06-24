@@ -1,6 +1,8 @@
 import Script from "next/script";
 import { pageHtml } from "./page-content";
 
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_ID;
+
 export default function Home() {
   return (
     <>
@@ -17,6 +19,22 @@ export default function Home() {
       </Script>
       */}
       <Script src="/site.js?v=jun24-links-1" strategy="afterInteractive" />
+      {gaMeasurementId ? (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gaMeasurementId}');
+            `}
+          </Script>
+        </>
+      ) : null}
     </>
   );
 }
