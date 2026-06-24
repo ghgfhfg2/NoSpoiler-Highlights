@@ -16,7 +16,7 @@ export default function Home() {
         {`(adsbygoogle = window.adsbygoogle || []).push({});`}
       </Script>
       */}
-      <Script src="/site.js?v=jun23-links-2" strategy="afterInteractive" />
+      <Script src="/site.js?v=jun24-links-1" strategy="afterInteractive" />
     </>
   );
 }
