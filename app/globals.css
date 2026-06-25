@@ -640,6 +640,51 @@ body.is-tournament-view .schedule {
   margin-top: 5px;
 }
 
+.comments-section {
+  width: min(1180px, calc(100% - 16px));
+  margin: 0 auto 40px;
+  padding: 18px 8px 0;
+  border-top: 1px solid var(--line);
+}
+
+.comments-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.comments-head h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.comments-head button {
+  min-height: 38px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e2530;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.comments-head button:hover,
+.comments-head button:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  outline: none;
+}
+
+#disqus_thread {
+  min-height: 260px;
+}
+
 @media (max-width: 920px) {
   .match-row {
     grid-template-columns: 98px 54px minmax(0, 1fr);
@@ -844,6 +889,12 @@ body.is-tournament-view .schedule {
     width: calc(100% - 16px);
     margin-top: 4px;
     padding: 0 6px;
+  }
+
+  .comments-section {
+    width: calc(100% - 16px);
+    margin-bottom: 28px;
+    padding: 16px 6px 0;
   }
 }
 

@@ -1,12 +1,15 @@
 import Script from "next/script";
+import DisqusComments from "./disqus-comments";
 import { pageHtml } from "./page-content";
 
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_ID;
+const disqusShortname = process.env.NEXT_PUBLIC_DISQUS_SHORTNAME;
 
 export default function Home() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: pageHtml }} />
+      <DisqusComments shortname={disqusShortname} />
       {/*
       <Script
         async

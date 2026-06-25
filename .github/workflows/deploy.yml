@@ -40,6 +40,7 @@ jobs:
       - name: Build static site
         env:
           NEXT_PUBLIC_GA_ID: ${{ vars.GA_MEASUREMENT_ID }}
+          NEXT_PUBLIC_DISQUS_SHORTNAME: ${{ vars.DISQUS_SHORTNAME }}
         run: npm run build
 
       - name: Upload GitHub Pages artifact
