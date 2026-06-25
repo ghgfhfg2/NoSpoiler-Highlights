@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "collect-links": "node scripts/collect-links.mjs",
     "start": "next start"
   },
   "dependencies": {
