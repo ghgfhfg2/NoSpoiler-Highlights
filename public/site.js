@@ -413,6 +413,10 @@ const highlightLinks = {
   LdzflN63k3JBC5O: {
     kbsGeneral: "https://chzzk.naver.com/video/13878358",
     kbsShort: "https://chzzk.naver.com/video/13878406",
+    jtbcGeneral: "https://m.sports.naver.com/video/1486277",
+  },
+  PY2ELA7JVDNhbp1: {
+    kbsShort: "https://m.sports.naver.com/video/1486280",
   },
   lFcMDwMFQ2EHxCh: {
     kbsGeneral: "https://chzzk.naver.com/video/13875303",
