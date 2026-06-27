@@ -384,6 +384,17 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/13829279",
     jtbcShort: "https://chzzk.naver.com/video/13829310",
   },
+  wgzNpZBJZJQRrDi: {
+    kbsGeneral: "https://chzzk.naver.com/video/13911199",
+    kbsShort: "https://chzzk.naver.com/video/13911210",
+    jtbcGeneral: "https://m.sports.naver.com/video/1487803",
+    jtbcShort: "https://chzzk.naver.com/video/13911156",
+  },
+  uTmUO71Xz7FmC0M: {
+    kbsGeneral: "https://m.sports.naver.com/video/1487794",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=F77E10968ACA860ED3AD8D42AC4B05AE3F3D&serviceType=CHZZK&recType=AIRS",
+    jtbcGeneral: "https://chzzk.naver.com/video/13911135",
+  },
   H81w6HIySlzx9tD: {
     kbsGeneral: "https://chzzk.naver.com/video/13744213",
     kbsShort: "https://chzzk.naver.com/video/13744279",
@@ -407,6 +418,17 @@ const highlightLinks = {
     kbsShort: "https://chzzk.naver.com/video/13844926",
     jtbcGeneral: "https://chzzk.naver.com/video/13844670",
     jtbcShort: "https://chzzk.naver.com/video/13844662",
+  },
+  YFjH0Rynu1V2pJP: {
+    kbsGeneral: "https://chzzk.naver.com/video/13909888",
+    jtbcGeneral: "https://m.sports.naver.com/video/1487612",
+    jtbcShort: "https://m.naver.com/shorts/?mediaId=0E5D517C66A1727B3C0C463C2458197E492A&serviceType=CHZZK&recType=AIRS",
+  },
+  "5TP26cCPLNgSwKQ": {
+    kbsGeneral: "https://m.sports.naver.com/video/1487618",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=972E008A62E174469A6296899D3B57EEE910&serviceType=CHZZK&recType=AIRS",
+    jtbcGeneral: "https://chzzk.naver.com/video/13909985",
+    jtbcShort: "https://chzzk.naver.com/video/13910004",
   },
   hDIOhfv2CJz8Zx0: {
     kbsGeneral: "https://chzzk.naver.com/video/13745694",
