@@ -608,7 +608,7 @@ const tournamentRounds = {
 };
 
 let selectedGroup = getInitialGroup();
-let currentView = selectedGroup === "all" ? "date" : "group";
+let currentView = getInitialView();
 let selectedDate = getInitialDate();
 let selectedRound = "r32";
 
@@ -618,28 +618,49 @@ function getInitialGroup() {
   return hasGroup ? hashGroup : "all";
 }
 
-function getInitialDate() {
+function getLocalToday() {
   const today = new Date();
-  const localToday = [
+  return [
     today.getFullYear(),
     String(today.getMonth() + 1).padStart(2, "0"),
     String(today.getDate()).padStart(2, "0"),
   ].join("-");
+}
+
+function getInitialView() {
+  if (selectedGroup !== "all") {
+    return "group";
+  }
+
+  return tournamentHasDate(getLocalToday()) ? "tournament" : "date";
+}
+
+function getInitialDate() {
+  const localToday = getLocalToday();
   const dates = getMatchDates();
 
   if (dates.includes(localToday)) {
     return localToday;
   }
 
-  if (dates.includes(DEFAULT_DATE)) {
-    return DEFAULT_DATE;
+  const nextDate = dates.find((dateValue) => dateValue > localToday);
+  if (nextDate) {
+    return nextDate;
   }
 
-  return dates[0] || DEFAULT_DATE;
+  return dates.at(-1) || DEFAULT_DATE;
 }
 
 function getMatchDates() {
   return Array.from(new Set(matchRows.map((row) => row.dataset.date).filter(Boolean))).sort();
+}
+
+function tournamentHasDate(dateValue) {
+  const [, month, day] = dateValue.split("-").map(Number);
+  const dateLabel = `${month}월 ${day}일`;
+  return Object.values(knockoutColumns)
+    .flat()
+    .some((match) => match.date.startsWith(dateLabel));
 }
 
 function getDateParts(dateValue) {
