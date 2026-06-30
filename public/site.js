@@ -559,7 +559,8 @@ const highlightLinks = {
   bwBeCjswPeFyCAd: {
     kbsGeneral: "https://m.sports.naver.com/video/1489753",
     kbsShort: "https://m.naver.com/shorts/?mediaId=67E81DCAACD76038BEF3B8AEDCF591BE55EC&serviceType=CHZZK&recType=AIRS",
-    jtbcGeneral: "https://m.sports.naver.com/video/1489989",
+    jtbcGeneral: "https://m.sports.naver.com/video/1490000",
+    jtbcShort: "https://m.sports.naver.com/video/1489989",
   },
   xyAFeEX2NfuEpaU: {
     jtbcGeneral: "https://m.sports.naver.com/video/1489948",
