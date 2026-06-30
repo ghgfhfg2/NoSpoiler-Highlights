@@ -23,6 +23,7 @@ const teamAliases = {
 };
 
 const chzzkGroups = {
+  tournament: 4992,
   "group-a": 4838,
   "group-b": 4839,
   "group-c": 4840,
