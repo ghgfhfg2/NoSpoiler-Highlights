@@ -564,6 +564,12 @@ body.is-tournament-view .schedule {
   box-shadow: 0 6px 16px rgba(25, 36, 55, 0.08);
 }
 
+.tournament-card.is-schedule-only {
+  align-content: center;
+  min-height: 96px;
+  box-shadow: none;
+}
+
 .tournament-card-head {
   display: flex;
   align-items: center;

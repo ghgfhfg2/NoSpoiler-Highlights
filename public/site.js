@@ -843,7 +843,7 @@ function renderTournament() {
     .map(
       (column, columnIndex) => `
         <div class="bracket-column" aria-label="${round.label} ${columnIndex + 1}열">
-          ${column.map((match) => renderTournamentCard(match)).join("")}
+          ${column.map((match) => renderTournamentCard(match, columnIndex === 0)).join("")}
         </div>
       `,
     )
@@ -856,11 +856,29 @@ function renderTournament() {
   });
 }
 
-function renderTournamentCard(match) {
-  const teams = match.teams || ["미정", "미정"];
-  const links = match.gameId ? highlightLinks[match.gameId] || {} : {};
+function renderTournamentCard(match, isSelectedRound) {
+  const hasTeams = isSelectedRound && Array.isArray(match.teams);
+  const hasLinks = isSelectedRound && match.gameId;
+  const teams = hasTeams ? match.teams : [];
+  const links = hasLinks ? highlightLinks[match.gameId] || {} : {};
   const teamHtml = teams.map((team) => renderTournamentTeam(team)).join("");
-  const linksHtml = highlightLinkSlots
+  const linksHtml = hasLinks ? renderTournamentLinks(links) : "";
+
+  return `
+    <article class="tournament-card ${isSelectedRound ? "" : "is-schedule-only"}">
+      <div class="tournament-card-head">
+        <span>${match.date}</span>
+        <strong>${match.time}</strong>
+      </div>
+      <h2>${match.label}</h2>
+      ${hasTeams ? `<div class="tournament-teams" aria-label="대진 정보">${teamHtml}</div>` : ""}
+      ${hasLinks ? `<div class="match-links" aria-label="${match.label} 하이라이트 링크">${linksHtml}</div>` : ""}
+    </article>
+  `;
+}
+
+function renderTournamentLinks(links) {
+  return highlightLinkSlots
     .map(([key, label]) => {
       const url = links[key];
 
@@ -871,22 +889,6 @@ function renderTournamentCard(match) {
       return `<span class="disabled-link" aria-disabled="true">${label}</span>`;
     })
     .join("");
-
-  return `
-    <article class="tournament-card">
-      <div class="tournament-card-head">
-        <span>${match.date}</span>
-        <strong>${match.time}</strong>
-      </div>
-      <h2>${match.label}</h2>
-      <div class="tournament-teams" aria-label="대진 정보">
-        ${teamHtml}
-      </div>
-      <div class="match-links" aria-label="${match.label} 하이라이트 링크">
-        ${linksHtml}
-      </div>
-    </article>
-  `;
 }
 
 function renderTournamentTeam(team) {
