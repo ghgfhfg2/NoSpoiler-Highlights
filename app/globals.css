@@ -612,6 +612,22 @@ body.is-tournament-view .schedule {
   transform: translateY(-50%);
 }
 
+.tournament-teams span.has-flag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 0;
+}
+
+.tournament-teams span.has-flag::before {
+  display: none;
+}
+
+.tournament-teams .flag {
+  flex: 0 0 auto;
+  margin-right: 0;
+}
+
 .tournament-card .match-links {
   grid-column: auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -54,6 +54,7 @@ function getText(url, accept = "application/json,text/plain,*/*") {
 
 function readMatches() {
   const html = fs.readFileSync(PAGE_FILE, "utf8");
+  const site = fs.readFileSync(SITE_FILE, "utf8");
   const sectionRegex = /<article class="day-section group-section" id="([^"]+)">([\s\S]*?)<\/article>/g;
   const rowRegex = /<div class="match-row" data-game-id="([^"]+)" data-date="([^"]+)">([\s\S]*?)(?=\n\s*<div class="match-row"|$)/g;
   const matches = [];
@@ -80,7 +81,37 @@ function readMatches() {
     }
   }
 
-  return matches;
+  return [...matches, ...readTournamentMatches(site)];
+}
+
+function readTournamentMatches(site) {
+  const match = site.match(/const knockoutColumns = \{([\s\S]*?)\n\};/);
+  if (!match) {
+    return [];
+  }
+
+  const columns = vm.runInNewContext(`({${match[1]}\n})`);
+  return (columns.r32 || [])
+    .filter((game) => game.gameId && Array.isArray(game.teams))
+    .map((game) => ({
+      id: game.gameId,
+      date: dateFromKoreanLabel(game.date),
+      group: "tournament",
+      teams: game.teams,
+      label: game.teams.join(" vs "),
+    }))
+    .filter((game) => game.date);
+}
+
+function dateFromKoreanLabel(dateLabel) {
+  const match = String(dateLabel).match(/(\d+)월\s+(\d+)일/);
+  if (!match) {
+    return "";
+  }
+
+  const month = match[1].padStart(2, "0");
+  const day = match[2].padStart(2, "0");
+  return `2026-${month}-${day}`;
 }
 
 function readHighlightLinks() {

@@ -548,6 +548,18 @@ const highlightLinks = {
     jtbcGeneral: "https://m.sports.naver.com/video/1488349",
     jtbcShort: "https://m.naver.com/shorts/?mediaId=2890DFF4E38FEA126516BC8A128EE54D9B77&serviceType=CHZZK&recType=AIRS",
   },
+  VUmRyf4SKuvTkAZ: {
+    kbsGeneral: "https://m.sports.naver.com/video/1489049",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=015E376B526A55EFB07B6ADFD10800810E81&serviceType=CHZZK&recType=AIRS",
+  },
+  JUiroo5GFn3JdTC: {
+    jtbcGeneral: "https://m.sports.naver.com/video/1489519",
+    jtbcShort: "https://m.naver.com/shorts/?mediaId=FD4C55C25722A104E090842293854B345F44&serviceType=CHZZK&recType=AIRS",
+  },
+  bwBeCjswPeFyCAd: {
+    kbsGeneral: "https://m.sports.naver.com/video/1489753",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=67E81DCAACD76038BEF3B8AEDCF591BE55EC&serviceType=CHZZK&recType=AIRS",
+  },
 };
 
 const highlightLinkSlots = [
@@ -559,22 +571,22 @@ const highlightLinkSlots = [
 
 const knockoutColumns = {
   r32: [
-    { date: "6월 29일 (월)", time: "04:00", label: "32강 1경기" },
-    { date: "6월 30일 (화)", time: "10:00", label: "32강 2경기" },
-    { date: "6월 30일 (화)", time: "05:30", label: "32강 3경기" },
-    { date: "7월 1일 (수)", time: "06:00", label: "32강 4경기" },
-    { date: "7월 3일 (금)", time: "04:00", label: "32강 5경기" },
-    { date: "7월 3일 (금)", time: "08:00", label: "32강 6경기" },
-    { date: "7월 2일 (목)", time: "05:00", label: "32강 7경기" },
-    { date: "7월 2일 (목)", time: "09:00", label: "32강 8경기" },
-    { date: "7월 1일 (수)", time: "10:00", label: "32강 9경기" },
-    { date: "7월 4일 (토)", time: "04:00", label: "32강 10경기" },
-    { date: "7월 4일 (토)", time: "08:00", label: "32강 11경기" },
-    { date: "7월 4일 (토)", time: "10:00", label: "32강 12경기" },
-    { date: "6월 29일 (월)", time: "08:00", label: "32강 13경기" },
-    { date: "6월 29일 (월)", time: "11:00", label: "32강 14경기" },
-    { date: "6월 30일 (화)", time: "02:00", label: "32강 15경기" },
-    { date: "7월 1일 (수)", time: "02:00", label: "32강 16경기" },
+    { gameId: "VUmRyf4SKuvTkAZ", date: "6월 29일 (월)", time: "04:00", label: "32강 1경기", teams: ["남아프리카 공화국", "캐나다"] },
+    { gameId: "JUiroo5GFn3JdTC", date: "6월 30일 (화)", time: "02:00", label: "32강 2경기", teams: ["브라질", "일본"] },
+    { gameId: "bwBeCjswPeFyCAd", date: "6월 30일 (화)", time: "05:30", label: "32강 3경기", teams: ["독일", "파라과이"] },
+    { gameId: "xyAFeEX2NfuEpaU", date: "6월 30일 (화)", time: "10:00", label: "32강 4경기", teams: ["네덜란드", "모로코"] },
+    { gameId: "HsRcoagB4TzwG3J", date: "7월 1일 (수)", time: "02:00", label: "32강 5경기", teams: ["코트디부아르", "노르웨이"] },
+    { gameId: "IfjIn83ZZ6XbHAb", date: "7월 1일 (수)", time: "06:00", label: "32강 6경기", teams: ["프랑스", "스웨덴"] },
+    { gameId: "aUWamctRH6AGgM8", date: "7월 1일 (수)", time: "10:00", label: "32강 7경기", teams: ["멕시코", "에콰도르"] },
+    { gameId: "RwjDlcX30v9eUeP", date: "7월 2일 (목)", time: "01:00", label: "32강 8경기", teams: ["잉글랜드", "콩고민주공화국"] },
+    { gameId: "0wWXh1FZlrfIjvm", date: "7월 2일 (목)", time: "05:00", label: "32강 9경기", teams: ["벨기에", "세네갈"] },
+    { gameId: "DzCXvZeKlC24kmn", date: "7월 2일 (목)", time: "09:00", label: "32강 10경기", teams: ["미국", "보스니아 헤르체고비나"] },
+    { gameId: "eGLZlfW9XdOQqNa", date: "7월 3일 (금)", time: "04:00", label: "32강 11경기", teams: ["스페인", "오스트리아"] },
+    { gameId: "UUthhOlRxJjWtS5", date: "7월 3일 (금)", time: "08:00", label: "32강 12경기", teams: ["포르투갈", "크로아티아"] },
+    { gameId: "fqi0ocBbFSj9ol9", date: "7월 3일 (금)", time: "12:00", label: "32강 13경기", teams: ["스위스", "알제리"] },
+    { gameId: "crfpr0TV88a1yL6", date: "7월 4일 (토)", time: "03:00", label: "32강 14경기", teams: ["호주", "이집트"] },
+    { gameId: "0bW1F7ag8ooLDU3", date: "7월 4일 (토)", time: "07:00", label: "32강 15경기", teams: ["아르헨티나", "카보베르데"] },
+    { gameId: "CKcKuuENFptPIdB", date: "7월 4일 (토)", time: "10:30", label: "32강 16경기", teams: ["콜롬비아", "가나"] },
   ],
   r16: [
     { date: "7월 5일 (일)", time: "02:00", label: "16강 1경기" },
@@ -845,6 +857,21 @@ function renderTournament() {
 }
 
 function renderTournamentCard(match) {
+  const teams = match.teams || ["미정", "미정"];
+  const links = match.gameId ? highlightLinks[match.gameId] || {} : {};
+  const teamHtml = teams.map((team) => renderTournamentTeam(team)).join("");
+  const linksHtml = highlightLinkSlots
+    .map(([key, label]) => {
+      const url = links[key];
+
+      if (url) {
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+      }
+
+      return `<span class="disabled-link" aria-disabled="true">${label}</span>`;
+    })
+    .join("");
+
   return `
     <article class="tournament-card">
       <div class="tournament-card-head">
@@ -853,17 +880,22 @@ function renderTournamentCard(match) {
       </div>
       <h2>${match.label}</h2>
       <div class="tournament-teams" aria-label="대진 정보">
-        <span>미정</span>
-        <span>미정</span>
+        ${teamHtml}
       </div>
       <div class="match-links" aria-label="${match.label} 하이라이트 링크">
-        <span class="disabled-link" aria-disabled="true">KBS2 일반</span>
-        <span class="disabled-link" aria-disabled="true">KBS2 숏</span>
-        <span class="disabled-link" aria-disabled="true">JTBC 일반</span>
-        <span class="disabled-link" aria-disabled="true">JTBC 숏</span>
+        ${linksHtml}
       </div>
     </article>
   `;
+}
+
+function renderTournamentTeam(team) {
+  const flagUrl = getFlagUrl(team);
+  const flagHtml = flagUrl
+    ? `<img class="flag" src="${flagUrl}" width="20" height="15" alt="" aria-hidden="true" loading="lazy" />`
+    : "";
+
+  return `<span class="${flagUrl ? "has-flag" : ""}">${flagHtml}${team}</span>`;
 }
 
 viewTabs.forEach((tab) => {
