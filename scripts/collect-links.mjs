@@ -91,8 +91,9 @@ function readTournamentMatches(site) {
   }
 
   const columns = vm.runInNewContext(`({${match[1]}\n})`);
-  return (columns.r32 || [])
-    .filter((game) => game.gameId && Array.isArray(game.teams))
+  return Object.values(columns)
+    .flat()
+    .filter((game) => game.gameId && Array.isArray(game.teams) && !game.teams.includes("미정"))
     .map((game) => ({
       id: game.gameId,
       date: dateFromKoreanLabel(game.date),
