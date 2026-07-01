@@ -262,7 +262,7 @@ function mergeLinks(current, matches, naverByGame, chzzkByGroup) {
   for (const match of matches) {
     if (match.date > untilDate) continue;
 
-    const videos = [...(naverByGame.get(match.id) || []), ...(chzzkByGroup.get(match.group) || [])];
+    const videos = [...(chzzkByGroup.get(match.group) || []), ...(naverByGame.get(match.id) || [])];
     next[match.id] ||= {};
 
     for (const video of videos) {
