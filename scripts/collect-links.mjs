@@ -156,12 +156,12 @@ function classifyVideo(video, match) {
   }
 
   const broadcaster = broadcasterFrom(title, channelName);
-  const isShort = title.includes("2분 하이라이트");
+  const isShort = /(2|3)분 하이라이트/.test(title);
   const isGeneral =
     !isShort &&
     /하이라이트/.test(title) &&
-    !/(3분|전반|후반|골\s*모음|골모음|주요장면)/.test(title);
-  const isFullHighlightClip = /전체 하이라이트/.test(divisionName) || /3분 하이라이트/.test(title);
+    !/(전반|후반|골\s*모음|골모음|주요장면)/.test(title);
+  const isFullHighlightClip = /전체 하이라이트/.test(divisionName);
 
   if (!broadcaster) {
     return { slots: [], reason: "unknown-broadcaster" };

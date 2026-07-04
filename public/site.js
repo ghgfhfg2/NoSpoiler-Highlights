@@ -603,9 +603,10 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/13988877",
   },
   "0wWXh1FZlrfIjvm": {
-    kbsGeneral: "https://chzzk.naver.com/video/13990738",
-    kbsShort: "https://m.naver.com/shorts/?mediaId=695353F19C0157082D23887D1AE1389DD3B1&serviceType=CHZZK&recType=AIRS",
-    jtbcGeneral: "https://chzzk.naver.com/video/13990749",
+    kbsGeneral: "https://chzzk.naver.com/video/13990703",
+    kbsShort: "https://chzzk.naver.com/video/13990738",
+    jtbcGeneral: "https://chzzk.naver.com/video/13990715",
+    jtbcShort: "https://chzzk.naver.com/video/13990749",
   },
   DzCXvZeKlC24kmn: {
     kbsGeneral: "https://chzzk.naver.com/video/13991436",
@@ -634,13 +635,14 @@ const highlightLinks = {
   crfpr0TV88a1yL6: {
     kbsGeneral: "https://chzzk.naver.com/video/14023432",
     kbsShort: "https://chzzk.naver.com/video/14023098",
-    jtbcGeneral: "https://chzzk.naver.com/video/14023002",
-    jtbcShort: "https://m.naver.com/shorts/?mediaId=F3C04FB2B7D5CD61215D994D9E29BBA102C3&serviceType=CHZZK&recType=AIRS",
+    jtbcGeneral: "https://chzzk.naver.com/video/14022980",
+    jtbcShort: "https://chzzk.naver.com/video/14023002",
   },
   "0bW1F7ag8ooLDU3": {
     kbsGeneral: "https://chzzk.naver.com/video/14024033",
     kbsShort: "https://chzzk.naver.com/video/14024022",
-    jtbcGeneral: "https://chzzk.naver.com/video/14024094",
+    jtbcGeneral: "https://chzzk.naver.com/video/14024062",
+    jtbcShort: "https://chzzk.naver.com/video/14024094",
   },
 };
 
