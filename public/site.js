@@ -156,6 +156,8 @@ const highlightLinks = {
   PY2ELA7JVDNhbp1: {
     kbsGeneral: "https://m.naver.com/shorts/?mediaId=867212C1857DB5024E2AA6A8B25FB57411CB&serviceType=CHZZK&recType=AIRS",
     kbsShort: "https://m.sports.naver.com/video/1486280",
+    jtbcGeneral: "https://chzzk.naver.com/video/13878747",
+    jtbcShort: "https://chzzk.naver.com/video/13878678",
   },
   KIVirGXodQcoceb: {
     kbsGeneral: "https://chzzk.naver.com/video/13680723",
@@ -224,6 +226,7 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/13876607",
   },
   "6rItofozOjBuYzu": {
+    kbsGeneral: "https://chzzk.naver.com/video/13876598",
     kbsShort: "https://chzzk.naver.com/video/13876298",
     jtbcGeneral: "https://chzzk.naver.com/video/13876101",
     jtbcShort: "https://chzzk.naver.com/video/13876065",
@@ -406,6 +409,7 @@ const highlightLinks = {
     kbsGeneral: "https://m.sports.naver.com/video/1487794",
     kbsShort: "https://m.naver.com/shorts/?mediaId=F77E10968ACA860ED3AD8D42AC4B05AE3F3D&serviceType=CHZZK&recType=AIRS",
     jtbcGeneral: "https://chzzk.naver.com/video/13911135",
+    jtbcShort: "https://chzzk.naver.com/video/13911302",
   },
   H81w6HIySlzx9tD: {
     kbsGeneral: "https://chzzk.naver.com/video/13744213",
@@ -433,6 +437,7 @@ const highlightLinks = {
   },
   YFjH0Rynu1V2pJP: {
     kbsGeneral: "https://chzzk.naver.com/video/13909888",
+    kbsShort: "https://chzzk.naver.com/video/13910530",
     jtbcGeneral: "https://m.sports.naver.com/video/1487612",
     jtbcShort: "https://m.naver.com/shorts/?mediaId=0E5D517C66A1727B3C0C463C2458197E492A&serviceType=CHZZK&recType=AIRS",
   },
@@ -466,6 +471,7 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/13845543",
   },
   hQl7Xcio5ddahqF: {
+    kbsGeneral: "https://chzzk.naver.com/video/13929217",
     kbsShort: "https://chzzk.naver.com/video/13929088",
     jtbcGeneral: "https://m.sports.naver.com/video/1488721",
     jtbcShort: "https://m.naver.com/shorts/?mediaId=B715F0C9CD8862593145D156DC80AB901BAC&serviceType=CHZZK&recType=AIRS",
