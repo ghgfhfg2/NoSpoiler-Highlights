@@ -669,6 +669,9 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/14056772",
   },
   "9Vkk9CB7qWI5ndB": {
+    kbsGeneral: "https://chzzk.naver.com/video/14057851",
+    kbsShort: "https://chzzk.naver.com/video/14057920",
+    jtbcGeneral: "https://chzzk.naver.com/video/14057875",
     jtbcShort: "https://chzzk.naver.com/video/14057850",
   },
 };

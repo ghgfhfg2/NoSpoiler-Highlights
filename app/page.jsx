@@ -21,7 +21,7 @@ export default function Home() {
         {`(adsbygoogle = window.adsbygoogle || []).push({});`}
       </Script>
       */}
-      <Script src="/site.js?v=jul06-links-3" strategy="afterInteractive" />
+      <Script src="/site.js?v=jul06-links-4" strategy="afterInteractive" />
       {gaMeasurementId ? (
         <>
           <Script
