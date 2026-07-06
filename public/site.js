@@ -724,7 +724,7 @@ const tournamentRounds = {
 let selectedGroup = getInitialGroup();
 let currentView = getInitialView();
 let selectedDate = getInitialDate();
-let selectedRound = "r32";
+let selectedRound = getInitialRound();
 
 function getInitialGroup() {
   const hashGroup = window.location.hash.replace("#", "");
@@ -770,11 +770,21 @@ function getMatchDates() {
 }
 
 function tournamentHasDate(dateValue) {
+  return Boolean(getTournamentRoundForDate(dateValue));
+}
+
+function getInitialRound() {
+  return getTournamentRoundForDate(getLocalToday()) || "r32";
+}
+
+function getTournamentRoundForDate(dateValue) {
   const [, month, day] = dateValue.split("-").map(Number);
   const dateLabel = `${month}월 ${day}일`;
-  return Object.values(knockoutColumns)
-    .flat()
-    .some((match) => match.date.startsWith(dateLabel));
+  const roundEntry = Object.entries(knockoutColumns).find(([, matches]) =>
+    matches.some((match) => match.date.startsWith(dateLabel)),
+  );
+
+  return roundEntry ? roundEntry[0] : "";
 }
 
 function getDateParts(dateValue) {
@@ -1009,6 +1019,9 @@ viewTabs.forEach((tab) => {
     }
 
     currentView = tab.dataset.view;
+    if (currentView === "tournament") {
+      selectedRound = getInitialRound();
+    }
     applyView();
   });
 });
