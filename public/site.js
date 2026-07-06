@@ -650,6 +650,18 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/14024866",
     jtbcShort: "https://chzzk.naver.com/video/14024854",
   },
+  dxZjTHkMiGI1Sao: {
+    kbsGeneral: "https://m.sports.naver.com/video/1493377",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=1413A75CD9794ED959D8ECE1786228BB4B57&serviceType=CHZZK&recType=AIRS",
+  },
+  I4e9suEcSWz89Bj: {
+    jtbcGeneral: "https://m.sports.naver.com/video/1493500",
+    jtbcShort: "https://m.naver.com/shorts/?mediaId=4D70E4B79395E330F17C6F850D20745D59CD&serviceType=CHZZK&recType=AIRS",
+  },
+  UxZKeP6929VOgkY: {
+    kbsGeneral: "https://m.sports.naver.com/video/1493966",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=A700572CCF8E3CC6B2D1DEE11D67F75BD088&serviceType=CHZZK&recType=AIRS",
+  },
 };
 
 const highlightLinkSlots = [
