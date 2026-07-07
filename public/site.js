@@ -674,6 +674,10 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/14057875",
     jtbcShort: "https://chzzk.naver.com/video/14057850",
   },
+  UlHGMaR9Puex1ZJ: {
+    kbsGeneral: "https://m.sports.naver.com/video/1494682",
+    kbsShort: "https://m.naver.com/shorts/?mediaId=8AB71E2EDFB55524DFD69033E33E3F6C58EC&serviceType=CHZZK&recType=AIRS",
+  },
 };
 
 const highlightLinkSlots = [
