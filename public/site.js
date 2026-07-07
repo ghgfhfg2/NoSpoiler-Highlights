@@ -675,8 +675,16 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/14057850",
   },
   UlHGMaR9Puex1ZJ: {
-    kbsGeneral: "https://m.sports.naver.com/video/1494682",
-    kbsShort: "https://m.naver.com/shorts/?mediaId=8AB71E2EDFB55524DFD69033E33E3F6C58EC&serviceType=CHZZK&recType=AIRS",
+    kbsGeneral: "https://chzzk.naver.com/video/14071349",
+    kbsShort: "https://chzzk.naver.com/video/14071477",
+    jtbcGeneral: "https://chzzk.naver.com/video/14071386",
+    jtbcShort: "https://chzzk.naver.com/video/14071453",
+  },
+  "0R11YoMXZnasETF": {
+    kbsGeneral: "https://chzzk.naver.com/video/14072472",
+    kbsShort: "https://chzzk.naver.com/video/14072463",
+    jtbcGeneral: "https://chzzk.naver.com/video/14072446",
+    jtbcShort: "https://chzzk.naver.com/video/14072437",
   },
 };
 
