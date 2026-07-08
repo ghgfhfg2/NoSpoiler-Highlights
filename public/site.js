@@ -738,10 +738,10 @@ const knockoutColumns = {
     { gameId: "vzsPJ1AJrNZ09cV", date: "7월 8일 (수)", time: "05:00", label: "16강 8경기", teams: ["스위스", "콜롬비아"] },
   ],
   qf: [
-    { gameId: "nvoqRVbMW4Xe1Nn", date: "7월 10일 (금)", time: "05:00", label: "8강 1경기", teams: ["미정", "미정"] },
-    { gameId: "lV1BDrTctJrHNuF", date: "7월 11일 (토)", time: "04:00", label: "8강 2경기", teams: ["미정", "미정"] },
-    { gameId: "OpzpScgCUi9Z2Ns", date: "7월 12일 (일)", time: "06:00", label: "8강 3경기", teams: ["미정", "미정"] },
-    { gameId: "NXAeLijCPVdhOQf", date: "7월 12일 (일)", time: "10:00", label: "8강 4경기", teams: ["미정", "미정"] },
+    { gameId: "nvoqRVbMW4Xe1Nn", date: "7월 10일 (금)", time: "05:00", label: "8강 1경기", teams: ["프랑스", "모로코"] },
+    { gameId: "lV1BDrTctJrHNuF", date: "7월 11일 (토)", time: "04:00", label: "8강 2경기", teams: ["스페인", "벨기에"] },
+    { gameId: "OpzpScgCUi9Z2Ns", date: "7월 12일 (일)", time: "06:00", label: "8강 3경기", teams: ["노르웨이", "잉글랜드"] },
+    { gameId: "NXAeLijCPVdhOQf", date: "7월 12일 (일)", time: "10:00", label: "8강 4경기", teams: ["아르헨티나", "스위스"] },
   ],
   sf: [
     { gameId: "Lnm0tgPweNfsAZ6", date: "7월 15일 (수)", time: "04:00", label: "준결승 1경기", teams: ["미정", "미정"] },
