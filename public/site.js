@@ -712,9 +712,14 @@ const highlightLinks = {
     jtbcShort: "https://chzzk.naver.com/video/14136207",
   },
   OpzpScgCUi9Z2Ns: {
+    kbsGeneral: "https://chzzk.naver.com/video/14153698",
     kbsShort: "https://m.sports.naver.com/video/1497940",
+    jtbcGeneral: "https://chzzk.naver.com/video/14153745",
+    jtbcShort: "https://chzzk.naver.com/video/14153750",
   },
   NXAeLijCPVdhOQf: {
+    kbsGeneral: "https://chzzk.naver.com/video/14155097",
+    kbsShort: "https://chzzk.naver.com/video/14155101",
     jtbcGeneral: "https://m.sports.naver.com/video/1498096",
     jtbcShort: "https://m.naver.com/shorts/?mediaId=55CF63097858F1F73D91693FC12A4E395EB3&serviceType=CHZZK&recType=AIRS",
   },

@@ -38,6 +38,11 @@ const chzzkGroups = {
   "group-l": 4871,
 };
 
+const chzzkBroadcasterChannels = [
+  "4df4756104a54e28e967bff6dc08e319",
+  "8ecd602c251f30fd7f09463e9f55609f",
+];
+
 function getText(url, accept = "application/json,text/plain,*/*") {
   return new Promise((resolve, reject) => {
     https
@@ -254,7 +259,37 @@ async function fetchChzzkVideos(groups) {
   return byGroup;
 }
 
-function mergeLinks(current, matches, naverByGame, chzzkByGroup) {
+async function fetchChzzkBroadcasterVideos() {
+  const videos = [];
+
+  for (const channelId of chzzkBroadcasterChannels) {
+    for (let page = 0; page < 5; page += 1) {
+      const url = `https://api.chzzk.naver.com/service/v1/channels/${channelId}/videos?sortType=LATEST&pagingType=PAGE&page=${page}&pageSize=100`;
+      const response = await getText(url);
+      if (response.status !== 200) {
+        throw new Error(`CHZZK channel API failed for ${channelId}: ${response.status} ${response.body.slice(0, 120)}`);
+      }
+
+      const json = JSON.parse(response.body);
+      const pageVideos = json.content?.data || [];
+      if (!pageVideos.length) break;
+
+      videos.push(
+        ...pageVideos.map((video) => ({
+          source: "chzzk-channel",
+          title: video.videoTitle || video.title || "",
+          channelName: video.channel?.channelName || video.channelName || "",
+          divisionName: "",
+          url: video.videoNo ? `https://chzzk.naver.com/video/${video.videoNo}` : "",
+        })),
+      );
+    }
+  }
+
+  return videos;
+}
+
+function mergeLinks(current, matches, naverByGame, chzzkByGroup, chzzkBroadcasterVideos) {
   const added = [];
   const review = [];
   const next = structuredClone(current);
@@ -262,7 +297,11 @@ function mergeLinks(current, matches, naverByGame, chzzkByGroup) {
   for (const match of matches) {
     if (match.date > untilDate) continue;
 
-    const videos = [...(chzzkByGroup.get(match.group) || []), ...(naverByGame.get(match.id) || [])];
+    const videos = [
+      ...chzzkBroadcasterVideos,
+      ...(chzzkByGroup.get(match.group) || []),
+      ...(naverByGame.get(match.id) || []),
+    ];
     next[match.id] ||= {};
 
     for (const video of videos) {
@@ -351,8 +390,12 @@ function missingReport(links, matches) {
 const matches = readMatches();
 const groups = [...new Set(matches.filter((match) => match.date <= untilDate).map((match) => match.group))];
 const { site, block, links } = readHighlightLinks();
-const [naverByGame, chzzkByGroup] = await Promise.all([fetchNaverVideos(), fetchChzzkVideos(groups)]);
-const { next, added, review } = mergeLinks(links, matches, naverByGame, chzzkByGroup);
+const [naverByGame, chzzkByGroup, chzzkBroadcasterVideos] = await Promise.all([
+  fetchNaverVideos(),
+  fetchChzzkVideos(groups),
+  fetchChzzkBroadcasterVideos(),
+]);
+const { next, added, review } = mergeLinks(links, matches, naverByGame, chzzkByGroup, chzzkBroadcasterVideos);
 
 if (write && added.length) {
   updateSiteFile(site, block, formatLinks(next, matches));
