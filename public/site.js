@@ -714,6 +714,10 @@ const highlightLinks = {
   OpzpScgCUi9Z2Ns: {
     kbsShort: "https://m.sports.naver.com/video/1497940",
   },
+  NXAeLijCPVdhOQf: {
+    jtbcGeneral: "https://m.sports.naver.com/video/1498096",
+    jtbcShort: "https://m.naver.com/shorts/?mediaId=55CF63097858F1F73D91693FC12A4E395EB3&serviceType=CHZZK&recType=AIRS",
+  },
 };
 
 const highlightLinkSlots = [
@@ -759,8 +763,8 @@ const knockoutColumns = {
     { gameId: "NXAeLijCPVdhOQf", date: "7월 12일 (일)", time: "10:00", label: "8강 4경기", teams: ["아르헨티나", "스위스"] },
   ],
   sf: [
-    { gameId: "Lnm0tgPweNfsAZ6", date: "7월 15일 (수)", time: "04:00", label: "준결승 1경기", teams: ["미정", "미정"] },
-    { gameId: "fEoSpA33bh3vGU7", date: "7월 16일 (목)", time: "04:00", label: "준결승 2경기", teams: ["미정", "미정"] },
+    { gameId: "Lnm0tgPweNfsAZ6", date: "7월 15일 (수)", time: "04:00", label: "준결승 1경기", teams: ["프랑스", "스페인"] },
+    { gameId: "fEoSpA33bh3vGU7", date: "7월 16일 (목)", time: "04:00", label: "준결승 2경기", teams: ["잉글랜드", "아르헨티나"] },
   ],
   final: [{ gameId: "IO7anHN5Us10Gzc", date: "7월 20일 (월)", time: "04:00", label: "결승전", teams: ["미정", "미정"] }],
 };
@@ -798,7 +802,7 @@ function getInitialView() {
     return "group";
   }
 
-  return tournamentHasDate(getLocalToday()) ? "tournament" : "date";
+  return getLatestRoundWithLinks() || tournamentHasDate(getLocalToday()) ? "tournament" : "date";
 }
 
 function getInitialDate() {
@@ -826,7 +830,19 @@ function tournamentHasDate(dateValue) {
 }
 
 function getInitialRound() {
-  return getTournamentRoundForDate(getLocalToday()) || "r32";
+  return getLatestRoundWithLinks() || getTournamentRoundForDate(getLocalToday()) || "r32";
+}
+
+function getLatestRoundWithLinks() {
+  const roundOrder = ["r32", "r16", "qf", "sf", "final"];
+  return (
+    [...roundOrder]
+      .reverse()
+      .find((roundKey) => knockoutColumns[roundKey].some((match) => {
+        const links = highlightLinks[match.gameId] || {};
+        return highlightLinkSlots.some(([slot]) => Boolean(links[slot]));
+      })) || ""
+  );
 }
 
 function getTournamentRoundForDate(dateValue) {
