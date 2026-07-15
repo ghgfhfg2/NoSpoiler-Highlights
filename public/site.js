@@ -729,6 +729,12 @@ const highlightLinks = {
     jtbcGeneral: "https://chzzk.naver.com/video/14199770",
     jtbcShort: "https://chzzk.naver.com/video/14199915",
   },
+  fEoSpA33bh3vGU7: {
+    kbsGeneral: "https://chzzk.naver.com/video/14215726",
+    kbsShort: "https://chzzk.naver.com/video/14215817",
+    jtbcGeneral: "https://chzzk.naver.com/video/14215729",
+    jtbcShort: "https://chzzk.naver.com/video/14215742",
+  },
 };
 
 const highlightLinkSlots = [
