@@ -783,7 +783,10 @@ const knockoutColumns = {
     { gameId: "Lnm0tgPweNfsAZ6", date: "7월 15일 (수)", time: "04:00", label: "준결승 1경기", teams: ["프랑스", "스페인"] },
     { gameId: "fEoSpA33bh3vGU7", date: "7월 16일 (목)", time: "04:00", label: "준결승 2경기", teams: ["잉글랜드", "아르헨티나"] },
   ],
-  final: [{ gameId: "IO7anHN5Us10Gzc", date: "7월 20일 (월)", time: "04:00", label: "결승전", teams: ["미정", "미정"] }],
+  final: [
+    { gameId: "aYg2oo6fpHlxNlX", date: "7월 19일 (일)", time: "06:00", label: "3·4위전", teams: ["프랑스", "잉글랜드"] },
+    { gameId: "IO7anHN5Us10Gzc", date: "7월 20일 (월)", time: "04:00", label: "결승전", teams: ["스페인", "아르헨티나"] },
+  ],
 };
 
 const tournamentRounds = {
